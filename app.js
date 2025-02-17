@@ -5,6 +5,7 @@ require("./src/config/databaseConnection.js")
 const port = process.env.PORT
 const todoRouter = require("./src/routers/todoRouter.js")
 
+//api 
 app.use(express.json())
 
 app.use("/api", todoRouter)
